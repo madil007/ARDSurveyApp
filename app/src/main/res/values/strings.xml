@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">ARD_Survey</string>
+    <string name="button_ACC">Account</string>
+    <string name="button_Options">Options</string>
+    <string name="button_Start">START</string>
+    <string name="button_watchlist_and_results">Watchlist + Results</string>
+    <string name="button_back">Back</string>
+    <string name="button_home">Home</string>
+    <string name="button_next">Next</string>
+    <string name="button_save_results">Save results</string>
+    <string name="button_restart">Restart</string>
+    <string name="button_add_watchlist">Add to watchlist</string>
+    <string name="button_share">Share</string>
+
+    <string name="text_result">Results</string>
+
+    <string name="hint_age_input">Your Age (dont lie)</string>
+
+    <!--Survey Fragen-->
+
+    <string name="Q1_age">1) How old are you?</string>
+
+    <string name="Q2_young_audience">1.5) Do you enjoy shows for younger audiences?</string>
+
+    <string name="Q3_genres">2) What genres do you like?</string>
+
+    <string name="Q4_animation">3) Are you more interested in live-action or in animation?</string>
+
+    <string name="Q5_Content">4) What kind of content do you prefer?</string>
+
+    <string name="Q6_episode_length">4.5) What episode length of a series do you enjoy most?</string>  <!--basierend auf antwort von 5-->
+
+    <string name="Q7_movie_length">4.5) What movie length do you enjoy most?</string>                  <!--basierend auf antwort von 5-->
+
+    <string name="Q8_new_releases">5) Do you prefer new released shows/movies?</string>
+
+    <string name="Q9_publisher">6) Which publisher do you prefer?</string>
+
+    <string name="Q10_geo_availability">7) Do you want suggestions from shows, that are not globally available?</string>
+
+    <string name="Q11_subtitles">8) Do you prefer watching movies/series with subtitles?</string>
+
+    <string name="Q12_sign_language">9) Do you require supported sign language?</string>
+
+    <string name="Q13_future_available">10) Would you like suggestions of shows that will be available in the future?</string>
+
+    <string name="Q14_not_available">11) Would you like suggestions of shows that are not available anymore?</string>
+
+    <!--Survey Antworten-->
+
+    <string name="answer_age">Enter your age</string>
+
+    <string name="answer_yes">Yes</string>
+
+    <string name="answer_no">No</string>
+
+    <string name="answer_neutral">I don\'t care</string>
+
+    <string name="answer_live_action">Live-Action</string>
+
+    <string name="answer_animation">Animation</string>
+
+    <string name="answer_movies">Movies</string>
+
+    <string name="answer_series">Series</string>
+
+    <string name="answer_documentary">Documentary/Report</string>
+
+    <string name="answer_news">News</string>
+
+    <string name="answer_show">Show/Magazine</string>
+
+    <string name="answer_all">Select All</string>
+
+    <string name="answer_short_length">Below 30 minutes</string>
+
+    <string name="answer_medium_length">30 to 60 minutes</string>
+
+    <string name="answer_long_length">Above 60 minutes</string>
+
+    <!--Survey Antworten Publisher-->
+
+    <string name="answer_ard_alpha">ARD-alpha</string>
+
+    <string name="answer_br_fernsehen">BR Fernsehen</string>
+
+    <string name="answer_arte">arte</string>
+
+    <string name="answer_hr_fernsehen">hr-fernsehen</string>
+
+    <string name="answer_radio_bremen">Radio Bremen</string>
+
+    <string name="answer_das_erste">Das Erste</string>
+
+    <string name="answer_kika">KiKA</string>
+
+    <string name="answer_tagesschau24">Tagesschau24</string>
+
+    <string name="answer_sr">SR</string>
+
+    <string name="answer_ndr">NDR</string>
+
+    <string name="answer_mdr">MDR</string>
+
+    <string name="answer_rbb_fernsehen">rbb Fernsehen</string>
+
+    <string name="answer_swr">SWR</string>
+
+    <string name="answer_wdr">WDR</string>
+
+    <string name="answer_funk">funk</string>
+
+    <string name="answer_phoenix">phoenix</string>
+
+    <string name="answer_one">ONE</string>
+
+    <string name="answer_3sat">3sat</string>
+
+</resources>

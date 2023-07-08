@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "621471904836",
+    "project_id": "ard-survey",
+    "storage_bucket": "ard-survey.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621471904836:android:9cbcf5c576d76376b2b811",
+        "android_client_info": {
+          "package_name": "com.example.ard_survey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621471904836-c5dogp2ljc019escahre3lu2f68lu2qp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt3ye_Eqq2KSrfUq7IE0KnWU6zXfz7Imc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621471904836-c5dogp2ljc019escahre3lu2f68lu2qp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
