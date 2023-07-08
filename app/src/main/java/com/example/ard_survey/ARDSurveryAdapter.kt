@@ -2,6 +2,7 @@ package com.example.ard_survey
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -51,6 +52,19 @@ class ARDSurveryAdapter(
             .into(holder.imageView)
 
         holder.videoLink.text= model.videolink
+
+//       holder.videoLink.setOnClickListener
+        // this code open link by click
+        holder.videoLink.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(model.videolink)
+
+            context.startActivity(intent)
+        }
+
+
+
+
 //
 //        for (i in 0 until model.items?.size!!) {
 ////            Log.d("imageUrlll", response.items[i]?.publisher?.institution?.imageURL.toString())
