@@ -57,7 +57,6 @@ class ResultsActivity : AppCompatActivity() {
 
         mainActivityViewModel = ViewModelProvider(this)[MainActivityViewModel::class.java]
 
-
             //  wp7progressBar.showProgressBar()
             progressDialog.show()
 

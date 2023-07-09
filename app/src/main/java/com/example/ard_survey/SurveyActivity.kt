@@ -301,7 +301,6 @@ class SurveyActivity : AppCompatActivity() {
         moviesCheckboxQ3.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked){
                 StoreVariable.store= "movies"
-
             }
             updateButtonState()
         }

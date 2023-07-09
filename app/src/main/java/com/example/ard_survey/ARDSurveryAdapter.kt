@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide
 import com.example.ard_survey.model.DisplayModel
 import com.example.ard_survey.model.ModelResponse
 
+// it is used to bind the data from json to recyclerview
 class ARDSurveryAdapter(
     private val context: Activity,
     private val list: MutableList<DisplayModel>
@@ -26,6 +27,7 @@ class ARDSurveryAdapter(
         val title: TextView
         val showType: TextView
 
+        // here we got id of the view from api_item_layout.xml
         init {
             imageView = itemView.findViewById(R.id.imageView)
             videoLink = itemView.findViewById(R.id.linktextView)
@@ -35,6 +37,7 @@ class ARDSurveryAdapter(
         }
     }
 
+    // in this function we inflate the layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContentViewHolder {
         val view =
             LayoutInflater.from(context)
@@ -48,13 +51,21 @@ class ARDSurveryAdapter(
 
     override fun onBindViewHolder(holder: ContentViewHolder, position: Int) {
         val model = list[position]
+
+        // its used to load image from json
+        // its library used to load image from json
+        // used to display image using Url of image
+        // its display image
         Glide.with(context)
             .load(model.imageurl)
             .placeholder(R.drawable.ic_launcher_foreground)
             .into(holder.imageView)
 
+        // its display videolink
         holder.videoLink.text= model.videolink
+        // its display title
         holder.title.text= model.title
+        // its display showtype weather its INFINITE_SERIES or SEASON_SERIES
         holder.showType.text= model.showtype
 
 //       holder.videoLink.setOnClickListener

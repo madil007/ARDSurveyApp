@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
+<!--    // when we want to show multple items we used recycler view-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/overlay_layout"
             android:layout_width="match_parent"
