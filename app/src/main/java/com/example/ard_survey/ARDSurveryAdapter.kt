@@ -67,23 +67,6 @@ class ARDSurveryAdapter(
         }
 
 
-
-
-//
-//        for (i in 0 until model.items?.size!!) {
-////            Log.d("imageUrlll", response.items[i]?.publisher?.institution?.imageURL.toString())
-//
-//
-//        }
-
-//        for (i in 0 until model.items?.get(position)?.publisher?.institution.imageURL!!) {
-
-         //   println(model.items?.get(position)?.images?.get(i)?.url)
-     //   }
-
-//        holder.ownerName.text = model.items?.get(position)?.publisher?.imageURL
-//        holder.ownerCity.text = hostelModel.city
-
     }
 
 }

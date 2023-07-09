@@ -1,18 +1,15 @@
 package com.example.ard_survey
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import android.content.Context
 import android.content.Intent
+import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+
 
 class SurveyActivity : AppCompatActivity() {
 
@@ -283,7 +280,6 @@ class SurveyActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {
                 // Nachdem der Text geändert wurde
                 val text = s.toString().trim() // Den eingegebenen Text erhalten und Leerzeichen entfernen
-
                 buttonNextSurvey.isEnabled = text.isNotEmpty()
 
             }
@@ -296,10 +292,17 @@ class SurveyActivity : AppCompatActivity() {
 
         //Frage 3  !!!!! NOT READY YET !!!!!
         seriesCheckboxQ3.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked){
+                StoreVariable.store= "series"
+            }
             updateButtonState()
         }
 
         moviesCheckboxQ3.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked){
+                StoreVariable.store= "movies"
+
+            }
             updateButtonState()
         }
 

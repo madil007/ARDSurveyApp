@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +15,7 @@ import com.example.ard_survey.model.DisplayModel
 import com.example.ard_survey.model.ModelResponse
 import com.example.mvvmkotlinexample.viewmodel.MainActivityViewModel
 
+
 class ResultsActivity : AppCompatActivity() {
     private lateinit var progressDialog: ProgressDialog
     private lateinit var adapter: ARDSurveryAdapter
@@ -23,9 +23,19 @@ class ResultsActivity : AppCompatActivity() {
     private lateinit var list: MutableList<ModelResponse>
     private lateinit var displayList: MutableList<DisplayModel>
     private lateinit var recyclerView: RecyclerView
+    private var showtype:String=""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_results)
+//
+//        val prefs = getPreferences(MODE_PRIVATE)
+//        val restoredText = prefs.getString("text", null)
+//
+        val variable = StoreVariable.store
+
+        Toast.makeText(this, variable.toString(), Toast.LENGTH_SHORT).show()
+        Log.d("restoredText",variable.toString())
+
 
         list= ArrayList<ModelResponse>()
         displayList= ArrayList<DisplayModel>()
@@ -45,7 +55,6 @@ class ResultsActivity : AppCompatActivity() {
 
 
 
-
         mainActivityViewModel = ViewModelProvider(this)[MainActivityViewModel::class.java]
 
 
@@ -54,11 +63,17 @@ class ResultsActivity : AppCompatActivity() {
 
             mainActivityViewModel.getUser()!!.observe(this, Observer { response ->
 
+
                 for (i in 0 until response.items?.size!!) {
                     val url = response.items[i]?.images?.get(0)?.url
                     val videolink = response.items[i]?.links?.android
                     val title = response.items[i]?.show?.title
-                    val showtype = response.items[i]?.show?.showType
+                    if (StoreVariable.store.equals("movies")){
+                        showtype = "SEASON_SERIES"
+                    }
+                    else{
+                        showtype = response.items[i]?.show?.showType.toString()
+                    }
                     displayList.add(DisplayModel(url.toString(),videolink, title, showtype))
                 }
 
