@@ -57,7 +57,9 @@ class ResultsActivity : AppCompatActivity() {
                 for (i in 0 until response.items?.size!!) {
                     val url = response.items[i]?.images?.get(0)?.url
                     val videolink = response.items[i]?.links?.android
-                    displayList.add(DisplayModel(url.toString(),videolink))
+                    val title = response.items[i]?.show?.title
+                    val showtype = response.items[i]?.show?.showType
+                    displayList.add(DisplayModel(url.toString(),videolink, title, showtype))
                 }
 
                 //   wp7progressBar.hideProgressBar()

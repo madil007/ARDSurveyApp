@@ -23,12 +23,14 @@ class ARDSurveryAdapter(
     inner class ContentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView
         val videoLink: TextView
-
+        val title: TextView
+        val showType: TextView
 
         init {
-
             imageView = itemView.findViewById(R.id.imageView)
             videoLink = itemView.findViewById(R.id.linktextView)
+            title = itemView.findViewById(R.id.titletextView)
+            showType = itemView.findViewById(R.id.showtextView)
 
         }
     }
@@ -52,6 +54,8 @@ class ARDSurveryAdapter(
             .into(holder.imageView)
 
         holder.videoLink.text= model.videolink
+        holder.title.text= model.title
+        holder.showType.text= model.showtype
 
 //       holder.videoLink.setOnClickListener
         // this code open link by click

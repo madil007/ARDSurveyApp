@@ -7,4 +7,6 @@ data class DisplayModel
     (
     val imageurl: String = "",
     val videolink: String? = "",
+    val title: String? = "",
+    val showtype: String? = "",
 )
